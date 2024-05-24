@@ -3,8 +3,8 @@ import time
 import os
 
 graph = {
-    "HELLO": {"GOODBYE": 0.5, "HELLO": 0.75}, # HELLO has a 50% chance of making a GOODBYE and a 75% chance of making another hello
-    "GOODBYE": {"HELLO": 0.5, "GOODBYE": 0.2} # GOODBYE has a 50% chance of making a HELLO and a 20% chance of making a GOODBYE
+    "HELLO": {"GOODBYE": 0.5, "HELLO": 0.75}, # HELLO has a 50% chance of making a GOODBYE and a 75% chance of making another HELLO
+    "GOODBYE": {"HELLO": 0.5, "GOODBYE": 0.2} # GOODBYE has a 50% chance of making a HELLO and a 20% chance of making another GOODBYE
 }
 
 def move(node: str, graph: dict[str: dict[str: float]]) -> str:
